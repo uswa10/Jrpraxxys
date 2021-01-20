@@ -1,0 +1,15 @@
+-Install WAMP Server https://www.wampserver.com/en/download-wampserver-64bits/
+-Install https://atom.io/
+-Install https://getcomposer.org/ 
+-Navigate to https://github.com/uswa10/Jrpraxxys.git Click the "code" button and select the "Download Zip"
+-When the .zip file download completed, extract all files from the .zip file to specified folder. Go to Local Disk C:>Wamp64>www
+-Create database named "jrpraxxys" in Localhost/phpMyAdmin.
+-Open the project in your editor and rename the ".env.example" file to ".env". 
+-After you renamed it, open the file and rename the "DB_DATABASE=laravel" to "DB_DATABASE=jrpraxxys".
+-Run composer install
+-Run php artisan key:generate
+-Run php artisan migrate
+-Run php artisan db:seed
+-Run php artisan storage:link
+-Run php artisan serve
+
